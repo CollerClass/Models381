@@ -49,17 +49,8 @@ public partial class SpringModel : Node3D
 	//------------------------------------------------------------------------
 	public void PlaceEndPoints(Vector3 endA, Vector3 endB)
 	{
-		ctrLoc = 0.5f * (endA + endB);
-
-		Vector3 dVec = endB-endA;
-		basisVecX = dVec.Normalized();
-		basisVecY = basisVecZ.Cross(basisVecX);
-
-		tr.Origin = ctrLoc;
-		tr.Basis = new Basis(basisVecX,basisVecY,basisVecZ);
-        Transform = tr;
-
-		//coil.Position = ctrLoc;
+		
+		
 
 	}
 
