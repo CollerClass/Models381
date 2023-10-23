@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgxwvehspcn4u"]
+
+[ext_resource type="Script" path="res://Models381/SpringModel.cs" id="1_spxfv"]
+[ext_resource type="Script" path="res://Models381/CoilGen.cs" id="2_s7v5h"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_d56we"]
+
+[node name="SpringModel" type="Node3D"]
+script = ExtResource("1_spxfv")
+
+[node name="CoilGen" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_d56we")
+script = ExtResource("2_s7v5h")
